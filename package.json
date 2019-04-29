@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "gm": "^1.23.1",
+    "puppeteer": "^1.15.0",
+    "tesseract.js": "^1.0.14"
+  }
+}
