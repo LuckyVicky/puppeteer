@@ -17,3 +17,7 @@ for mac:
 
 for win:
 `npm install gm`
+
+# run example.js
+run example.js to loading a website and recognize the code.
+`node example.js`
