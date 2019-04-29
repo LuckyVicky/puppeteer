@@ -1,7 +1,5 @@
 const puppeteer = require('puppeteer');
-const assert = require('assert');
 var fs = require('fs');
-// var tesseract = require('node-tesseract');
 var tesseract = require('tesseract.js');
 var gm = require('gm');
 
@@ -53,8 +51,8 @@ function recognizeImg (imgPath, options) {
     const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
     await page.goto('http://thzwb.thnet.gov.cn/web/jsp/bsy/appointment.jsp');
-    await page.type('#loginName', '89757vicky');
-    await page.type('#loginPwd', '111***zzz');
+    await page.type('#loginName', 'loginName');
+    await page.type('#loginPwd', 'loginPwd');
     // get code
     async function getResourceContent(page, url) {
         const { content, base64Encoded } = await page._client.send(
